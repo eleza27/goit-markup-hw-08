@@ -1,0 +1,133 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-field {
+    margin-bottom: 20px;
+}
+
+.contact-form-field-title {
+    display: block;
+    margin-bottom: 4px;
+
+    @include font(12px, 400, 14px);
+    letter-spacing: 0.01em;
+    color: var(--second-color);
+}
+
+.contact-form-input-wrapper {
+    display: block;
+    position: relative;
+}
+
+.contact-form-input {
+    padding-left: 42px;
+    width: 100%;
+
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+        outline: none;
+        border-color: var(--accent-color);
+    }
+}
+
+.contact-form-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .contact-form-input:focus + & {
+        fill: var(--accent-color);
+    }
+}
+
+.contact-form-message {
+    display: block;
+    padding: 12px 16px;
+
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &::placeholder {
+        @include font(12px, 400, 14px);
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    }
+    &:focus {
+        outline: none;
+        border-color: var(--accent-color);
+    }
+}
+
+.contact-form-checkbox-label {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+    @include font(14px, 400, 24px);
+    letter-spacing: 0.03em;
+    color: var(--second-color);
+
+    &::before {
+        display: block;
+        width: 16px;
+        height: 15px;
+        border: 2px solid #212121;
+        border-radius: 2px;
+        content: "";
+        cursor: pointer;
+        margin-right: 7px;
+
+        .contact-form-checkbox:checked + & {
+            border: 2px solid var(--accent-color);
+            background-image: url(../images/modal-checkbox/icon-check.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-origin: border-box;
+            background-color: var(--background-accent-color);
+        }
+        
+        .contact-form-checkbox:focus + & {
+            border: 2px solid var(--accent-color);
+        }
+    }
+}
+
+.contact-form-checkbox {
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-form-agree {
+    color: var(--accent-color);
+}
+
+.contact-form-btn {
+    align-self: center;
+    width: 200px;
+    height: 50px;
+
+    @include font(16px, 700, 30px);
+    color: var(--third-color);
+    background-color: var(--background-accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+        background-color: var(--background-second-color);
+    }
+}
