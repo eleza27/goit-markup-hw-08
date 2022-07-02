@@ -1,8 +1,5 @@
 .logo {
     display: block;
-    margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 25px;
 
     text-decoration: none;
     list-style: none;
@@ -11,6 +8,12 @@
     letter-spacing: 0.03em;
     color: var(--accent-color);
 }
+
+// .logo__header {
+//     margin-right: 93px;
+//     padding-top: 24px;
+//     padding-bottom: 25px;
+// }
 
 .logo__footer {
     display: block;
