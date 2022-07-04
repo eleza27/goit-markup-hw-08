@@ -14,16 +14,6 @@
 }
 
 @media screen and (max-width: 767px) {
-    .page-header {
-        padding-top: 16px;
-        padding-bottom: 16px;
-        border-bottom: 1px solid #ECECEC;
-    }
-    .page-header__container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
     .menu {
         display: none;
     }
