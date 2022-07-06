@@ -875,6 +875,10 @@ body {
     margin-right: 30px;
   }
 }
+.section__doings {
+  padding-top: 0px;
+}
+
 .doings {
   display: flex;
   justify-content: space-between;
@@ -907,6 +911,11 @@ body {
   background: rgba(47, 48, 58, 0.8);
 }
 
+@media screen and (max-width: 1199px) {
+  .section__doings {
+    display: none;
+  }
+}
 .our-team {
   display: flex;
   flex-wrap: wrap;
