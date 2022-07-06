@@ -34,9 +34,10 @@
             @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/1-hero/img-desktop@2x.jpg);
         }
+        padding-top: 200px;
+        padding-bottom: 200px;
     }
 }
-
 
 .hero__title {
     margin-bottom: 30px;
@@ -47,8 +48,6 @@
     color: #FFFFFF;
 
     @media screen and (min-width: 1200px) {
-        padding-top: 200px;
-        padding-bottom: 200px;
         @include font(44px, 900, 60px);
     }
 }
