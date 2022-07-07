@@ -18,3 +18,13 @@
 .section--our-background {
     background-color: #F5F4FA;
 }
+
+@media screen and (max-width: 1199px) {
+    .section {
+        padding-top: 60px;
+        padding-bottom: 60px;      
+    }
+    .section__title {
+        @include font(28px, 700, 32px);
+    }
+}

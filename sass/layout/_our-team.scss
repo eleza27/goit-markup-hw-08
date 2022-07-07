@@ -74,7 +74,6 @@
 @media screen and (max-width: 1199px) {
     .section__title {
         margin-bottom: 30px;
-        @include font(28px, 700, 32px);
     }
 }
 
@@ -87,7 +86,7 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
     .our-team__item {
         width: calc((100% - 30px) / 2);        
         &:not(:nth-child(2n)) {
@@ -106,8 +105,6 @@
     }
     .our-team__item {
         flex-basis: calc((100% - 90px) / 4);
-        margin-bottom: 30px;
-
         &:not(:nth-child(4n+4)) {
             margin-right: 30px;
         }
