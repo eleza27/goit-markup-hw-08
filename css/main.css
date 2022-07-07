@@ -875,10 +875,6 @@ body {
     margin-right: 30px;
   }
 }
-.section__doings {
-  padding-top: 0px;
-}
-
 .doings {
   display: flex;
   justify-content: space-between;
@@ -912,7 +908,7 @@ body {
 }
 
 @media screen and (max-width: 1199px) {
-  .section__doings {
+  .section--no-padding-top {
     display: none;
   }
 }
