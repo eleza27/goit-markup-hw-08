@@ -8,14 +8,8 @@
     background-color: var(--background-third-color);
 }
 
-.footer-container {
-    display: flex;
-    align-items: baseline;
-}
-
 .footer__side-left {
-    margin-right: 70px;
-    flex-grow: 1;
+    margin-bottom: 60px;
 }
 
 .address-footer__map {
@@ -27,19 +21,10 @@
     color: var(--fourth-color);
 }
 
-.address-footer {
-    margin-top: 20px;
-}
-
-.address-footer__item:not(:last-child) {
-    margin-bottom: 9px;
-}
-
 .address-footer__item-link {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
+    @include font(14px, 400, 24px);
     letter-spacing: 0.03em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
@@ -60,12 +45,14 @@
 }
 
 .footer__social-link {
-    margin-right: 93px;
+    text-align: center;
 }
 
 .footer__social-list {
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
 }
 
 .footer__social-list-item:not(:last-child) {
@@ -99,7 +86,7 @@
 
 .footer__subcribe {
     display: flex;
-    margin-left: auto;
+    align-items: center;
 }
 
 .footer__subscribe-title {
@@ -112,17 +99,14 @@
     color: var(--third-color);
 }
 
-.footer__subcribe-elements {
-    display: flex;
-    align-items: center;
-}
+
 
 .footer__subscribe-input {
     display: block;
     padding-left: 16px;
     margin-right: 12px;
 
-    width: 358px;
+    width: 100%;
     height: 50px;
 
     color: var(--third-color);
@@ -172,4 +156,57 @@
 .icon-send {
     margin-left: 10px;
     fill: var(--third-color);
+}
+
+@media screen and (max-width: 1199px) {
+    .footer {
+        text-align: center;
+    }
+    .address-footer__item:not(:last-child) {
+        margin-bottom: 8px;
+    }
+    .footer__subcribe-elements {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__subscribe-input {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+    .footer__subscribe-input {
+        width: 450px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer__container {
+        display: flex;
+        align-items: baseline;
+    }
+    .footer__side-left {
+        margin-right: 70px;
+        flex-grow: 1;
+    }
+    .address-footer__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+    .footer__social-link {
+        margin-right: 93px;
+    }
+    .footer__subcribe-elements {
+        display: flex;
+        align-items: center;
+    }
+    .footer__subscribe-input {
+        width: 358px;
+    }
 }

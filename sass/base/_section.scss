@@ -34,5 +34,8 @@
     .section {
         padding-top: 94px;
         padding-bottom: 94px;
+        &--no-padding-top {
+        padding-top: 0;
+        }
     }
 }

@@ -5,8 +5,11 @@
     list-style: none;
 }
 
-.doings__item:not(:nth-child(3n)) {
-    margin-right: 30px;
+.doings__item {
+    width: calc((100% - 60px) / 3);
+    &:not(:nth-child(3n)) {
+        margin-right: 30px;
+    }
 }
 
 .doings__box {
