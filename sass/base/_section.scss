@@ -25,6 +25,14 @@
         padding-bottom: 60px;      
     }
     .section__title {
+        margin-bottom: 30px;
         @include font(28px, 700, 32px);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .section {
+        padding-top: 94px;
+        padding-bottom: 94px;
     }
 }
