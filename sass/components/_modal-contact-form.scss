@@ -131,3 +131,9 @@
         background-color: var(--background-second-color);
     }
 }
+
+@media screen and (max-width: 1199px) {
+    .contact-form-checkbox-label {
+        @include font(12px, 400, 14px);
+    }
+}
