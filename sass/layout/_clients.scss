@@ -4,7 +4,6 @@
     flex-wrap: wrap;
     // align-items: center;
     justify-content: center;
-    margin-top: 30px;
 }
 
 .clients__link {
@@ -45,7 +44,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
     .clients__item {
         width: calc((100% - 60px) / 3);
         &:not(:nth-child(3n)) {
@@ -59,14 +58,12 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .clients {
-        margin-top: 50px;
-    }
     .clients__item {
         width: calc((100% - 150px) / 6);
         &:not(:last-child) {
             margin-right: 30px;
         }
+        margin-bottom: 0;
     }
 
 }

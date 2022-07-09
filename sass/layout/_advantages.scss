@@ -5,6 +5,7 @@
 
 .advantages {
     list-style: none;
+    gap: 30px;
 }
 
 .advantages__box {
@@ -43,6 +44,7 @@
 @media screen and (max-width: 767px) {
     .advantages__item {
         width: 100%;
+        
         &:not(:last-child) {
             margin-bottom: 30px;
         }
@@ -59,12 +61,6 @@
     }
     .advantages__item {
         width: calc((100% - 30px) / 2);
-        &:not(:nth-child(2n)) {
-            margin-right: 30px;
-        }
-        &:not(:nth-child(-n+2)) {
-            margin-bottom: 30px;
-        }
     } 
 }
 
@@ -75,9 +71,5 @@
     }
     .advantages__item {
         flex-basis: calc((100% - 90px) / 4);
-
-        &:not(:nth-child(4n)) {
-            margin-right: 30px;
-        }
     }
 }

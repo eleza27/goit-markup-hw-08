@@ -8,9 +8,9 @@
     background-color: var(--background-third-color);
 }
 
-.footer__side-left {
-    margin-bottom: 60px;
-}
+// .footer__side-left {
+//     margin-bottom: 60px;
+// }
 
 .address-footer__map {
     color: var(--third-color);
@@ -44,15 +44,14 @@
     color: var(--third-color);
 }
 
-.footer__social-link {
-    text-align: center;
-}
+// .footer__social-link {
+//     text-align: center;
+// }
 
 .footer__social-list {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 60px;
 }
 
 .footer__social-list-item:not(:last-child) {

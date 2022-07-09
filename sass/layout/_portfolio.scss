@@ -2,12 +2,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 15px 8px;
 
     list-style: none;
-}
-
-.filter__item:not(:nth-child(5n)) {
-    margin-right: 8px;
 }
 
 .filter__button {
@@ -37,9 +34,6 @@
     .filter {
         justify-content: flex-start;
         margin-bottom: 40px;
-    }
-    .filter__item:not(:nth-child(-n+2)) {
-        margin-bottom: 15px;
     }
 }
 
