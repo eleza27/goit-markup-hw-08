@@ -116,6 +116,11 @@
         }
     }
 
+    .mobile-menu__social-item--no-padding-left {
+        padding-left: 0px;
+        padding-right: 10px;
+    }
+
     .mobile-menu__social-link {
         text-decoration: none;
         color: var(--accent-color);
